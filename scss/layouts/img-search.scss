@@ -49,14 +49,30 @@ $color-fondo2: #e0c17e75;
     line-height: 30px;
     padding: 25px;
     border-radius: 100%;
+    border: none;
     transition: 4s ease-in-out;
-    &:hover{
-      transform: rotate(360deg);
-    }
+    /*&:hover{
+    background-color: #cd9c31;
+    }*/
     cursor: pointer;
     i{
     font-size: 18px;
     color: $color-secundario;
     }
   } 
+  .results{
+    list-style: none;
+    margin-bottom: 20px;
+    li{
+      padding: 10px;
+      background-color: $color-fondo1;
+      box-shadow: 0 0 10px $color-fondo2;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      color: #9B3E15;
+      &:hover{
+        background-color: #cd9c31;
+      }
+    }
+  }
 }

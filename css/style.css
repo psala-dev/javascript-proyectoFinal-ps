@@ -102,15 +102,31 @@ header .header-icons i:hover {
   line-height: 30px;
   padding: 25px;
   border-radius: 100%;
+  border: none;
   transition: 4s ease-in-out;
+  /*&:hover{
+  background-color: #cd9c31;
+  }*/
   cursor: pointer;
-}
-.img-search .search-btn:hover {
-  transform: rotate(360deg);
 }
 .img-search .search-btn i {
   font-size: 18px;
   color: #9B3E15;
+}
+.img-search .results {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.img-search .results li {
+  padding: 10px;
+  background-color: #e0c17e;
+  box-shadow: 0 0 10px rgba(224, 193, 126, 0.4588235294);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #9B3E15;
+}
+.img-search .results li:hover {
+  background-color: #cd9c31;
 }
 
 /*# sourceMappingURL=style.css.map */
