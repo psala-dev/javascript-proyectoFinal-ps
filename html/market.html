@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Librería y cafetería Letras y Especias, es un refugio acogedor para todos. Continúa con tu compra.">
+    <meta name="keywords" content="Librería y cafetería, Librería, Cafetería, Libros, Café, Lectura, Taller, Tienda, Compra, Venta, Libros nuevos">
+    <meta name="author" content="Paola Sala">
+    <meta name="geo.placename" content="Uruguay, Montevideo">
+
+    <title>LETRAS Y ESPECIAS | Carrito</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/logo-icon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!--<img src="assets/logo-icon.png" alt="Logo Letras y Especias" class="header-logo">-->
+        <h1 class="logo">LETRAS<br>ESPECIAS</h1>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <!--<li>
+                    <a href=#nosotros>Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="html/books.html">Librería</a>
+                </li>
+                <li>
+                    <a href="html/coffee.html">Cafetería</a>
+                </li>-->
+                <li>
+                    <a href="html/market.html">Tienda</a>
+                </li>
+                <!--<li>
+                    <a href="#contacto">Contáctanos</a>
+                </li>-->
+            </ul>
+        </nav>
+        <!-- Iconos navbar -->
+        <div class="header-icons">
+            <!-- Tienda -->
+            <div class="tienda-img">
+                <a class="boton-carrito active" href="html/market.html">
+                    <i class="bi bi-basket-fill"></i>
+                </a>
+            </div>
+            <!-- Login -->
+            <div class="user-img">
+                <a href="html/login.html">
+                    <i class="bi bi-person-badge"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <a class="boton-volver" href="../index.html"><i class="bi bi-arrow-return-left"></i> Seguir Comprando</a>
+        <section>
+            <h2 class="titulo-tienda">carrito</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+                <div class="carrito-productos">
+                    <div class="carrito-producto">
+                        <img src="" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>titulo</small>
+                            <h3>libro 01</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>cantidad
+                            </small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito producto-precio">
+                            <small>precio</small>
+                            <p>$1000</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>carrito-producto-subtotal</small>
+                            <p>$1000</p>
+                        
+                        </div>
+                    <button class="class carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                    <div class="carrito-producto">
+                        <img src="" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>titulo</small>
+                            <h3>libro 01</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>cantidad
+                            </small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito producto-precio">
+                            <small>precio</small>
+                            <p>$1000</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>carrito-producto-subtotal</small>
+                            <p>$1000</p>
+                        
+                        </div>
+                    <button class="class carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                </div>
+                <div class="class carrito-acciones">
+                    <div class="class carrito-acciones-left">
+                        <button class="class carrito-acciones-vaciar">vaciar carrito</button>
+                    </div>
+                    <div class="class carrito-acciones-right">
+                        <div class="class carrito-acciones-total">
+                            <p>total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button class="carrito-acciones-comprar">comprar ahora</button>
+                    </div>
+                </div>               
+            </div>
+        </section>
+    </main>
+     <!-- Footer -->
+<footer>
+    <p>2024.Letras y Especias </p>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="../js/index.js"></script>
+</body>
+</html>

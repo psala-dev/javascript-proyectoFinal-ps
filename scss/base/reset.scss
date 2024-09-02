@@ -1,15 +1,21 @@
-// RESET
-
-// univeral
-*{
-    font-family: "Playfair Display", serif;
-    font-size: 13px; 
-    color: black;
-    margin: 0;
-    padding: 0;
+// reset
+:root {
+    --clr-main: #cd9c31;
+    --clr-sec: #9B3E15;
+    --clr-back: #e0c17e;
+    --clr-back2: #e0c17e75;
 }
 
-// body
-body{
-   background-image: linear-gradient(to bottom,#E0C17E, #e0c17e75);
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
