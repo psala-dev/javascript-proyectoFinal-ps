@@ -1,0 +1,33 @@
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    .producto-img{
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+    .producto-detalles{
+        background-color: global-variable-exists($name: --clr-main);
+        color: global-variable-exists($name: --clr-sec);
+        padding: .5rem;
+        border-radius: 1rem;
+        margin-top: -2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        .producto-titulo{
+            font-size: 1rem;
+        }
+        .producto-agregar{
+            border: 0;
+            background-color: bisque;
+            color: global-variable-exists($name: --clr-main);
+            cursor: pointer;
+            &hover{
+                background-color: global-variable-exists($name: --clr-sec);
+                color: aqua;
+            }
+        }
+    }
+}

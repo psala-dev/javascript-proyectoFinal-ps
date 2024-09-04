@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: global-variable-exists($name: --clr-main);
+    font-weight: 500;
+    border-bottom: 2px solid global-variable-exists($name: --clr-sec);
+}
+nav{
+    ul{
+        list-style-type: none;
+        display: flex;
+        margin: 8px 4px 4px 4px;
+        li{
+            margin: 10px;
+            transition: 2s;
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                font-weight: bolder;
+                margin: 2px; 
+                }
+            }
+        }
+    }
+}
+.header-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px;
+    transition: 2s;
+    i{
+        padding: 5px;
+        color: global-variable-exists($name: --clr-sec);
+        font-size: 18px;
+        &:hover{
+        font-weight: bolder;
+        margin: 2px;          
+        }
+    }
+}

@@ -46,7 +46,7 @@
                     <a href="html/coffee.html">Cafetería</a>
                 </li>-->
                 <li>
-                    <a href="html/market.html">Tienda</a>
+                    <a href="../html/market.html">Tienda</a>
                 </li>
                 <!--<li>
                     <a href="#contacto">Contáctanos</a>
@@ -57,7 +57,7 @@
         <div class="header-icons">
             <!-- Tienda -->
             <div class="tienda-img">
-                <a class="boton-carrito active" href="html/market.html">
+                <a class="boton-carrito active" href="../html/market.html">
                     <i class="bi bi-basket-fill"></i>
                 </a>
             </div>
@@ -75,10 +75,11 @@
         <section>
             <h2 class="titulo-tienda">carrito</h2>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
-                <div class="carrito-productos">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+                <div id="carrito-productos"
+                class="carrito-productos disable">
                     <div class="carrito-producto">
-                        <img src="" alt="">
+                        <img class="carrito-producto-img" src="../assets/book1.jpg" alt="">
                         <div class="carrito-producto-titulo">
                             <small>titulo</small>
                             <h3>libro 01</h3>
@@ -100,7 +101,7 @@
                     <button class="class carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                     </div>
                     <div class="carrito-producto">
-                        <img src="" alt="">
+                        <img class="carrito-producto-img" src="../assets/book2.jpg" alt="">
                         <div class="carrito-producto-titulo">
                             <small>titulo</small>
                             <h3>libro 01</h3>
@@ -119,21 +120,28 @@
                             <p>$1000</p>
                         
                         </div>
-                    <button class="class carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div class="class carrito-acciones">
-                    <div class="class carrito-acciones-left">
-                        <button class="class carrito-acciones-vaciar">vaciar carrito</button>
+                <div id="carrito-acciones" class="carrito-acciones disable">
+                    <div class="carrito-acciones-left">
+                        <button class="carrito-acciones-vaciar">vaciar carrito</button>
                     </div>
-                    <div class="class carrito-acciones-right">
-                        <div class="class carrito-acciones-total">
+                    <div class="carrito-acciones-center">
+                        <h3>filtrar</h3>
+                        <button id="filtrar-libro" class="boton-menu boton-categoria">libros</button>
+                        <button id="filtrar-cafe" class="boton-menu boton-categoria">cafe</button>
+                        <button id="filtrar-otros" class="boton-menu boton-categoria">otros</button>
+                    </div>
+                    <div class="carrito-acciones-right">
+                        <div class="carrito-acciones-total">
                             <p>total:</p>
                             <p id="total">$3000</p>
                         </div>
                         <button class="carrito-acciones-comprar">comprar ahora</button>
                     </div>
-                </div>               
+                </div>  
+                <p id="carrito-comprado" class="carrito-comprado disable">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>             
             </div>
         </section>
     </main>
@@ -164,5 +172,6 @@
     </ul>
 </footer>
 <script src="../js/index.js"></script>
+<script src="../js/carrito.js"></script>
 </body>
 </html>
