@@ -127,6 +127,6 @@ localStorage.setItem("productos-en-carrito", JSON.stringify(productoEnCarrito));
 }
 
 function actualizarNumero() {
-    let nuevonumero = productosEnCarrito.reduce((acc, producto) => acc +producto.cantidad, 0)
+    let nuevonumero = productoEnCarrito.reduce((acc, producto) => acc +producto.cantidad, 0)
     numero.innerText = nuevonumero;
 }
