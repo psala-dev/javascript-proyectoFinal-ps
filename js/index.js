@@ -105,7 +105,7 @@ const productoEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrit
 if(productoEnCarritoLS) {
     let productoEnCarrito = productoEnCarritoLS
 } else {
-    productosEnCarrito = [];
+    productoEnCarrito = [];
 }
 productoEnCarrito = [];
 
@@ -114,19 +114,19 @@ function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find (producto => producto.id === idBoton);
 
-    if(productosEnCarrito.some(producto => producto.id === id.boton)) {
-        productosEnCarrito.findIndex(producto => producto.id === idBoton);
-        productosEnCarrito[index].cantidad++;
+    if(productoEnCarrito.some(producto => producto.id === id.boton)) {
+        productoEnCarrito.findIndex(producto => producto.id === idBoton);
+        productoEnCarrito[index].cantidad++;
     } else {
-        productoAgregado.cantidad = id;
-        productosEnCarrito.push(productoAgregado);
+        productoAgregado.cantidad = 1;
+        productoEnCarrito.push(productoAgregado);
 }    
 actualizarNumero();
 
-localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+localStorage.setItem("productos-en-carrito", JSON.stringify(productoEnCarrito));
 }
 
 function actualizarNumero() {
-    let nuevonumero = productosEnCarrito.reduce((acc, producto) => acc +producto.cantidad, 0)
+    let nuevonumero = productoEnCarrito.reduce((acc, producto) => acc +producto.cantidad, 0)
     numero.innerText = nuevonumero;
 }
