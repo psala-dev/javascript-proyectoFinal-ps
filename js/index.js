@@ -118,7 +118,7 @@ function agregarAlCarrito(e) {
         productosEnCarrito.findIndex(producto => producto.id === idBoton);
         productosEnCarrito[index].cantidad++;
     } else {
-        productoAgregado.cantidad = id;
+        productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
 }    
 actualizarNumero();
