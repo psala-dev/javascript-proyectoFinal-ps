@@ -58,9 +58,9 @@
                     <button class="boton-menu">Seguir Comprando</button>
                 <div id="contenedor-carrito" class="contenedor-carrito">
                     <p class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
-                    <div class="carrito-productos">
+                    <div class="carrito-productos disabled">
                         <div class="carrito-producto">
-                            <img src="../assets/books/book3.jpg" alt="">
+                            <img class="carrito-producto-imagen" src="../assets/books/book3.jpg" alt="">
                             <div class="carrito-producto-titulo">
                                 <small>titulo</small>
                                 <h3>libro 03</h3>
@@ -79,7 +79,7 @@
                             <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                         </div>
                         <div class="carrito-producto">
-                            <img src="../assets/books/book2.jpg" alt="">
+                            <img class="carrito-producto-imagen" src="../assets/books/book2.jpg" alt="">
                             <div class="carrito-producto-titulo">
                                 <small>titulo</small>
                                 <h3>libro 02</h3>
@@ -98,20 +98,21 @@
                             <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                         </div>
                     </div>
-                </div>
+                
             
-            <div class="carrito-acciones">
+            <div class="carrito-acciones disabled">
                 <div class="carrito-acciones-izq">
                 <button class="carrito-acciones-vaciar">Vaciar carrito</button>
-            </div>
-            <div class="carrito-acciones-der">
-                <div class="carrito-acciones-total">
-                    <p>Total:</p>
-                    <p id="total">$2500</p>
                 </div>
+                <div class="carrito-acciones-der">
+                    <div class="carrito-acciones-total">
+                    <p>Total: </p>
+                    <p id="total"> $2500</p>
+                    </div>
                     <button class="carrito-acciones-comprar">Finalizar Compra</button>
-            
-        </div>
+                </div>
+            </div>
+            <p class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
         </div>
         </section>
         </main>

@@ -94,7 +94,9 @@ header{
     .header-icons{
         background-color: yellow;
         span{
-            padding: 0px 0px 0px 4px;
+            background-color: pink;
+            padding: 0 .25rem;
+            border-radius: .15rem .25rem;
         }
     }
 }

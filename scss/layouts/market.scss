@@ -1,4 +1,4 @@
-.carrito-vacio{
+/*.carrito-vacio{
     color: aquamarine;
     display: none;
 }
@@ -31,4 +31,76 @@
         }
     }
 
+}
+    */
+    .disabled{
+        display: none;
+ 
+.contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .carrito-productos{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        .carrito-producto{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: GRAY;
+            padding: .5rem;
+            border-radius: 1rem;
+            .carrito-producto-imagen{
+                width: 4rem;
+                border-radius: 1rem;
+            }
+            small{
+                font-size: .75rem;
+            }
+            .carrito-producto-eliminar{
+                border: 0;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }     
+    }
+    .carrito-acciones{
+        display: flex;
+        justify-content: space-between;
+        .carrito-acciones-vaciar{
+            border: 0;
+            background-color: green;
+            padding: 1rem;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .carrito-acciones-der{
+            display: flex;    
+            align-items: center;
+            .carrito-acciones-total{
+                display: flex;
+           
+                    border: 0;
+                    background-color: pink;
+                    padding: 1rem;
+                    border-top-left-radius: 1rem;
+                    border-bottom-left-radius: 1rem;
+                    text-transform: uppercase;
+                
+            }
+            .carrito-acciones-comprar{
+                border: 0;
+                background-color: yellow;
+                padding: 1rem;
+                
+                text-transform: uppercase;
+                cursor: pointer;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+            }
+    }
+    }
+}
 }
