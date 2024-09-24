@@ -64,6 +64,30 @@ header{
             li{
               padding: 0px 6px;  
               background-color: blue; 
+              .boton-menu{
+                background-color: transparent;
+                border: 0;
+                color: white;
+                cursor: pointer;
+                
+
+              }
+              .active{
+                background-color: violet;
+                width: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                position: relative;
+                &:before{
+                    content: "hola";
+                    position: absolute;
+                    background-color: black;
+                    top: 100%;
+                    border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    box-shadow: 15px 1rem 15px blue;
+                }
+            }
             }
         }
     }

@@ -32,3 +32,51 @@
     }
 }
     */
+
+h2{
+    font-size: 35px;
+    background-color: green;
+    margin: 5px;
+}
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: yellow;
+    padding: 15px;
+    gap: 15px;
+    .producto{
+        .producto-imagen{
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .producto-detalles{
+            background-color: aqua;
+            padding: .5rem;
+            margin-top: -2rem;
+            position: relative;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+            .producto-titulo{
+                color: white;
+                font-size: 15px;
+            }
+            .producto-agregar{
+                background-color: blue;
+                border: 0;
+                color: white;
+                text-transform: uppercase;
+                padding: .25rem;
+                border-radius: 1rem;
+                cursor: pointer;
+                border: 2px solid black;
+                transition: background-color .2s, color .2s;
+                &:hover{
+                    background-color: aqua;
+                }
+            }
+        }
+    }
+    
+}

@@ -87,6 +87,28 @@ header nav ul li {
   padding: 0px 6px;
   background-color: blue;
 }
+header nav ul li .boton-menu {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+header nav ul li .active {
+  background-color: violet;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+header nav ul li .active:before {
+  content: "hola";
+  position: absolute;
+  background-color: black;
+  top: 100%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 15px 1rem 15px blue;
+}
 header .header-icons {
   background-color: yellow;
 }
@@ -128,5 +150,50 @@ header .header-icons span {
     }
 }
     */
+h2 {
+  font-size: 35px;
+  background-color: green;
+  margin: 5px;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: yellow;
+  padding: 15px;
+  gap: 15px;
+}
+.contenedor-productos .producto .producto-imagen {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.contenedor-productos .producto .producto-detalles {
+  background-color: aqua;
+  padding: 0.5rem;
+  margin-top: -2rem;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.contenedor-productos .producto .producto-detalles .producto-titulo {
+  color: white;
+  font-size: 15px;
+}
+.contenedor-productos .producto .producto-detalles .producto-agregar {
+  background-color: blue;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: background-color 0.2s, color 0.2s;
+}
+.contenedor-productos .producto .producto-detalles .producto-agregar:hover {
+  background-color: aqua;
+}
 
 /*# sourceMappingURL=style.css.map */
