@@ -1,4 +1,4 @@
-header {
+/*header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,3 +41,38 @@ nav{
         }
     }
 }
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid black;
+    padding: 5px 5px 0px 5px;
+    .logo{
+        background-color: red;
+        font-size: 20px;
+        font-weight: 800;
+        span{
+            font-size: 12px;
+            padding-left: 4px;
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            li{
+              padding: 0px 6px;  
+              background-color: blue; 
+            }
+        }
+    }
+    .header-icons{
+        background-color: yellow;
+        span{
+            padding: 0px 0px 0px 4px;
+        }
+    }
+}
+    
+
