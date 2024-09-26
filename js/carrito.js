@@ -28,7 +28,7 @@ if(productosEnCarrito && productosEnCarrito.length > 0) {
     const div = document.createElement("div");
     div.classList.add("carrito-producto");
         div.innerHTML = `
-     <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+     <img class="carrito-producto-imagen" src="../${producto.imagen}" alt="${producto.titulo}">
                             <div class="carrito-producto-titulo">
                                 <small>titulo</small>
                                 <h3>${producto.titulo}</h3>

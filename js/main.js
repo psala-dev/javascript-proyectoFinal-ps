@@ -1,68 +1,13 @@
-const productos = [
-    {
-        id: "libro-01",
-        titulo: "Libro 01",
-        imagen: "./assets/books/book1.jpg",
-        precio: 1000
-    },
-    {
-        id: "libro-02",
-        titulo: "Libro 02",
-        imagen: "./assets/books/book2.jpg",
-        precio: 1020
-    },
-    {
-        id: "libro-03",
-        titulo: "Libro 03",
-        imagen: "./assets/books/book3.jpg",
-        precio: 1030
-    },
-    {
-        id: "libro-04",
-        titulo: "Libro 04",
-        imagen: "./assets/books/book4.jpg",
-        precio: 1400
-    },
-    {
-        id: "libro-05",
-        titulo: "Libro 05",
-        imagen: "./assets/books/book5.jpg",
-        precio: 5000
-    },
-    {
-        id: "libro-06",
-        titulo: "Libro 06",
-        imagen: "./assets/books/book6.jpg",
-        precio: 1060
-    },
-    {
-        id: "libro-07",
-        titulo: "Libro 07",
-        imagen: "./assets/books/book7.jpg",
-        precio: 1700
-    },
-    {
-        id: "libro-08",
-        titulo: "Libro 08",
-        imagen: "./assets/books/book8.jpg",
-        precio: 1080
-    },
-    {
-        id: "libro-09",
-        titulo: "Libro 09",
-        imagen: "./assets/books/book9.jpg",
-        precio: 1000
-    },
-    {
-        id: "libro-01",
-        titulo: "Libro 01",
-        imagen: "./assets/books/book1.jpg",
-        precio: 1000
-    },
-];
+let productos = [];
+
+fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    })
 
 //DOM
-
 const contenedorProductos = document.querySelector("#contenedor-productos");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numero = document.querySelector("#numero");
