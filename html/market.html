@@ -57,8 +57,8 @@
                 <h2 class="titulo-tienda" id="titulo-principal">Carrito</h2>
                     <button class="boton-menu">Seguir Comprando</button>
                 <div id="contenedor-carrito" class="contenedor-carrito">
-                    <p class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
-                    <div class="carrito-productos disabled">
+                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+                    <div id="carrito-productos" class="carrito-productos disabled">
                         <div class="carrito-producto">
                             <img class="carrito-producto-imagen" src="../assets/books/book3.jpg" alt="">
                             <div class="carrito-producto-titulo">
@@ -100,19 +100,19 @@
                     </div>
                 
             
-            <div class="carrito-acciones disabled">
+            <div id="carrito-acciones" class="carrito-acciones disabled">
                 <div class="carrito-acciones-izq">
-                <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
                 </div>
                 <div class="carrito-acciones-der">
                     <div class="carrito-acciones-total">
                     <p>Total: </p>
                     <p id="total"> $2500</p>
                     </div>
-                    <button class="carrito-acciones-comprar">Finalizar Compra</button>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Finalizar Compra</button>
                 </div>
             </div>
-            <p class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
         </div>
         </section>
         </main>
@@ -143,7 +143,7 @@
         </ul>
     </footer>
      <!-- Links JavaScript-->
-     <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script>-->
      <script src="../js/carrito.js"></script>
 </body>
 </html>
