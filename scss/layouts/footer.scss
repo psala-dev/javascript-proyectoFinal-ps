@@ -1,72 +1,39 @@
-$color-principal: #cd9c31;
-$color-secundario: #9B3E15;
-$color-fondo1: #E0C17E;
+$color-main: #cd9c31;
+$color-sec: #9B3E15;
+$color-back: #e0c17e;
+$color-back-sec: #e0c17e75;
 
 footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $color-fondo1;
+    background-color: $color-back;
     font-weight: 500;
-    border-top: 2px solid $color-secundario;
-    
+    border-top: 2px solid $color-sec;
+    padding: 5px;
+    height: 50px;
+    p{
+        color: #9B3E15;
         padding: 5px;
-        height: 50px;
-        margin: 8px 15px;
-       
-        p{
-            color: black;
-            padding: 5px;
-            margin: 10px;
-        }
-        ul{
-            list-style-type: none;
-            display: flex;
-            margin: 4px;
-            justify-content: space-around;
-            li{          
-                align-items: center;
-                padding: 5px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    &:hover{
-                        font-weight: bolder;
-                        margin: 8px; 
-                    }
-                }
-            }
-        }
-        
+        margin: 10px;
+        font-weight: 600;
     }
-    nav{
-        ul{
-            list-style-type: none;
-            display: flex;
-            margin: 8px 4px 4px 4px;
-            li{
-                margin: 10px;
+    ul{
+        display: flex;
+        margin: 4px;
+        justify-content: space-around;
+        li{          
+            align-items: center;
+            padding: 5px;
+            i{
                 transition: 2s;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    &:hover{
-                    font-weight: bolder;
-                    margin: 2px; 
-                    }
+                padding: 5px;
+                color: $color-sec;
+                font-size: 18px;
+                &:hover{
+                     font-weight: bolder;
                 }
             }
-        }
-    }
-        i{
-      
-        transition: 2s;
-            padding: 5px;
-            color: $color-secundario;
-            font-size: 18px;
-            &:hover{
-            font-weight: bolder;
-            margin: 2px;          
-            }
-        }
-    
+        }    
+    }      
+}

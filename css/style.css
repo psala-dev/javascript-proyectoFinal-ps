@@ -115,6 +115,7 @@ header .header-icons i {
   color: #9B3E15;
 }
 header .header-icons i span {
+  background-color: #e0c17e;
   font-weight: bolder;
   padding: 0 0.25rem;
   border-radius: 0.15rem 0.25rem;
@@ -307,20 +308,19 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #E0C17E;
+  background-color: #e0c17e;
   font-weight: 500;
   border-top: 2px solid #9B3E15;
   padding: 5px;
   height: 50px;
-  margin: 8px 15px;
 }
 footer p {
-  color: black;
+  color: #9B3E15;
   padding: 5px;
   margin: 10px;
+  font-weight: 600;
 }
 footer ul {
-  list-style-type: none;
   display: flex;
   margin: 4px;
   justify-content: space-around;
@@ -329,42 +329,14 @@ footer ul li {
   align-items: center;
   padding: 5px;
 }
-footer ul li a {
-  text-decoration: none;
-  color: black;
-}
-footer ul li a:hover {
-  font-weight: bolder;
-  margin: 8px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: 8px 4px 4px 4px;
-}
-nav ul li {
-  margin: 10px;
-  transition: 2s;
-}
-nav ul li a {
-  text-decoration: none;
-  color: black;
-}
-nav ul li a:hover {
-  font-weight: bolder;
-  margin: 2px;
-}
-
-i {
+footer ul li i {
   transition: 2s;
   padding: 5px;
   color: #9B3E15;
   font-size: 18px;
 }
-i:hover {
+footer ul li i:hover {
   font-weight: bolder;
-  margin: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
