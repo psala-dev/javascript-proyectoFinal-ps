@@ -1,177 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Librería y cafetería Letras y Especias, es un refugio acogedor para todos. Continúa con tu compra.">
-    <meta name="keywords" content="Librería y cafetería, Librería, Cafetería, Libros, Café, Lectura, Taller, Tienda, Compra, Venta, Libros nuevos">
-    <meta name="author" content="Paola Sala">
-    <meta name="geo.placename" content="Uruguay, Montevideo">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Librería y cafetería Letras y Especias, es un refugio acogedor para todos, ya sea que se desee un buen libro para sumergirse en un mundo fascinante o un delicioso café para disfrutar.">
+        <meta name="keywords" content="Librería y cafetería, Librería, Cafetería, Libros, Café, Lectura, Taller, Tienda, Compra, Venta, Libros nuevos">
+        <meta name="author" content="Paola Sala">
+        <meta name="geo.placename" content="Uruguay, Montevideo">
+    
+        <title>LETRAS Y ESPECIAS | Carrito</title>
+    
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/logo-icon.ico" type="image/x-icon">
+    
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>LETRAS Y ESPECIAS | Carrito</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets/logo-icon.ico" type="image/x-icon">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <!--<img src="assets/logo-icon.png" alt="Logo Letras y Especias" class="header-logo">-->
-        <h1 class="logo">LETRAS<br>ESPECIAS</h1>
-        <!-- Navbar -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <!--<li>
-                    <a href=#nosotros>Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="html/books.html">Librería</a>
-                </li>
-                <li>
-                    <a href="html/coffee.html">Cafetería</a>
-                </li>-->
-                <li>
-                    <a href="../html/market.html">Tienda</a>
-                </li>
-                <!--<li>
-                    <a href="#contacto">Contáctanos</a>
-                </li>-->
-            </ul>
-        </nav>
-        <!-- Iconos navbar -->
-        <div class="header-icons">
-            <!-- Tienda -->
-            <div class="tienda-img">
-                <a class="boton-carrito active" href="../html/market.html">
-                    <i class="bi bi-basket-fill"></i>
-                </a>
-            </div>
-            <!-- Login -->
-            <div class="user-img">
-                <a href="html/login.html">
-                    <i class="bi bi-person-badge"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-    <!-- Main -->
-    <main>
-        <a class="boton-volver" href="../index.html"><i class="bi bi-arrow-return-left"></i> Seguir Comprando</a>
-        <section>
-            <h2 class="titulo-tienda">carrito</h2>
-            <div class="contenedor-carrito">
-                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
-                <div id="carrito-productos"
-                class="carrito-productos disable">
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-img" src="../assets/book1.jpg" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>titulo</small>
-                            <h3>libro 01</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>cantidad
-                            </small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito producto-precio">
-                            <small>precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>carrito-producto-subtotal</small>
-                            <p>$1000</p>
-                        
-                        </div>
-                    <button class="class carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-                    </div>
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-img" src="../assets/book2.jpg" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>titulo</small>
-                            <h3>libro 01</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>cantidad
-                            </small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito producto-precio">
-                            <small>precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>carrito-producto-subtotal</small>
-                            <p>$1000</p>
-                        
-                        </div>
-                    <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-                    </div>
+         <!-- Tostify JS -->
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <h1 class="logo">LETRAS<br><span>&</span><br>ESPECIAS</h1>
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <button class="boton-menu">Tienda</button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Iconos navbar -->
+            <div class="header-icons">
+                <!-- Carrito -->
+                <div class=" boton-menu boton-carrito">
+                    <a href="./market.html">
+                        <i class="bi bi-basket-fill"></i>
+                    </a>
                 </div>
-                <div id="carrito-acciones" class="carrito-acciones disable">
-                    <div class="carrito-acciones-left">
-                        <button class="carrito-acciones-vaciar">vaciar carrito</button>
-                    </div>
-                    <div class="carrito-acciones-center">
-                        <h3>filtrar</h3>
-                        <button id="filtrar-libro" class="boton-menu boton-categoria">libros</button>
-                        <button id="filtrar-cafe" class="boton-menu boton-categoria">cafe</button>
-                        <button id="filtrar-otros" class="boton-menu boton-categoria">otros</button>
-                    </div>
-                    <div class="carrito-acciones-right">
-                        <div class="carrito-acciones-total">
-                            <p>total:</p>
-                            <p id="total">$3000</p>
-                        </div>
-                        <button class="carrito-acciones-comprar">comprar ahora</button>
-                    </div>
-                </div>  
-                <p id="carrito-comprado" class="carrito-comprado disable">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>             
             </div>
+        </header>
+        <!-- Main -->
+        <main>   
+            <section>
+                <h2 class="titulo-tienda" id="titulo-principal">Carrito</h2>
+                    <button class="boton-menu">Seguir Comprando</button>
+                <div id="contenedor-carrito" class="contenedor-carrito">
+                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+                    <div id="carrito-productos" class="carrito-productos disabled">
+                        <!--<div class="carrito-producto">
+                            <img class="carrito-producto-imagen" src="../assets/books/book3.jpg" alt="">
+                            <div class="carrito-producto-titulo">
+                                <small>titulo</small>
+                                <h3>libro 03</h3>
+                            </div>
+                            <div class="carrito-producto-cantidad">
+                                <small>cantidad</small>
+                                <p>1</p>
+                            </div>
+                            <div class="carrito-producto-precio">
+                                <small>precio</small>
+                                <p>$1300</p>
+                            </div>
+                            <div class="carrito-producto-subtotal">
+                                <p>$1300</p>
+                            </div>
+                            <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                        </div>
+                        <div class="carrito-producto">
+                            <img class="carrito-producto-imagen" src="../assets/books/book2.jpg" alt="">
+                            <div class="carrito-producto-titulo">
+                                <small>titulo</small>
+                                <h3>libro 02</h3>
+                            </div>
+                            <div class="carrito-producto-cantidad">
+                                <small>cantidad</small>
+                                <p>2</p>
+                            </div>
+                            <div class="carrito-producto-precio">
+                                <small>precio</small>
+                                <p>$1200</p>
+                            </div>
+                            <div class="carrito-producto-subtotal">
+                                <p>$1200</p>
+                            </div>
+                            <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                        </div>-->
+                    </div>
+                
+            
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="carrito-acciones-izq">
+                <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="carrito-acciones-der">
+                    <div class="carrito-acciones-total">
+                    <p>Total: </p>
+                    <p id="total"> $2500</p>
+                    </div>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Finalizar Compra</button>
+                </div>
+            </div>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+        </div>
         </section>
-    </main>
-     <!-- Footer -->
-<footer>
-    <p>2024.Letras y Especias </p>
-    <ul>
-        <li>
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="bi bi-facebook"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="bi bi-instagram"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/" target="_blank">
-                <i class="bi bi-twitter-x"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-        </li>
-    </ul>
-</footer>
-<script src="../js/index.js"></script>
-<script src="../js/carrito.js"></script>
+        </main>
+         <!-- Footer -->
+    <footer>
+        <p>2024.Letras y Especias </p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+     <!-- Links JavaScript-->
+    <!-- <script src="../js/main.js"></script>-->
+     
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="../js/carrito.js"></script>
+     
 </body>
 </html>

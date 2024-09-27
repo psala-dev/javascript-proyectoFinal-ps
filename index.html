@@ -16,6 +16,9 @@
     
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Tostify JS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     
         <!-- Link CSS -->
         <link rel="stylesheet" href="css/style.css">
@@ -28,69 +31,124 @@
     <body>
         <!-- Header -->
         <header>
-            <!--<img src="assets/logo-icon.png" alt="Logo Letras y Especias" class="header-logo">-->
-            <h1 class="logo">LETRAS<br>ESPECIAS</h1>
+            <!-- Logo -->
+            <h1 class="logo">LETRAS <span>&</span><br>ESPECIAS</h1>
             <!-- Navbar -->
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                   <!-- <li>
-                        <a href=#nosotros>Sobre Nosotros</a>
+                        <button class="boton-menu">Inicio</button>
                     </li>
                     <li>
-                        <a href="html/books.html">Librería</a>
+                        <button class="boton-menu active">Tienda</button>
                     </li>
-                    <li>
-                        <a href="html/coffee.html">Cafetería</a>
-                    </li>-->
-                    <li>
-                        <a href="./html/market.html">Tienda</a>
-                    </li>
-                    <!--<li>
-                        <a href="#contacto">Contáctanos</a>
-                    </li>-->
                 </ul>
             </nav>
             <!-- Iconos navbar -->
             <div class="header-icons">
-                <!-- Tienda -->
-                <div class="tienda-img">
+                <!-- Carrito -->
+                <div class="boton-carrito">
                     <a href="./html/market.html">
                         <i class="bi bi-basket-fill"><span id="numero" class="numero">0</span></i>
-                    </a>
-                </div>
-                <!-- Login -->
-                <div class="user-img">
-                    <a href="html/login.html">
-                        <i class="bi bi-person-badge"></i>
                     </a>
                 </div>
             </div>
         </header>
         <!-- Main -->
-        <main>
-            <!-- Sección buscador -->
-<!--            <section>
-                <div class="bckgrnd-img">
-                </div>
-                <div class="img-search">
-                    <div class="search-box">
-                        <input type="text" placeholder="Libros, productos...">       
-                        <div class="search-btn">
-                            <a href="#">
-                                <i class="bi bi-search"></i>
-                            </a>                       
-                        </div>
-                    </div>
-                </div>
-            </section>  -->   
+        <main>   
             <section>
                 <h2 class="titulo-tienda" id="titulo-principal">Tienda</h2>
                 <div id="contenedor-productos" class="contenedor-productos">
-                    <!-- Esto se va a completar con js-->
+                <!-- Se completa con JS -->    <!--<div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book1.jpg" alt="Libro 01">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 01</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book2.jpg" alt="Libro 02">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 02</h3>
+                            <p class="producto-precio">$1200</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book3.jpg" alt="Libro 03">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 03</h3>
+                            <p class="producto-precio">$1300</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book4.jpg" alt="Libro 04">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 04</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book5.jpg" alt="Libro 05">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 05</h3>
+                            <p class="producto-precio">$1050</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
                     
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book6.jpg" alt="Libro 06">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 06</h3>
+                            <p class="producto-precio">$1600</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book7.jpg" alt="Libro 07">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 07</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book8.jpg" alt="Libro 08">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 08</h3>
+                            <p class="producto-precio">$1800</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book9.jpg" alt="Libro 09">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 09</h3>
+                            <p class="producto-precio">$1009</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book1.jpg" alt="Libro 10">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 10</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="./assets/books/book3.jpg" alt="Libro 11">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Libro 11</h3>
+                            <p class="producto-precio">$1010</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>-->
                 </div>
             </section>
         </main>
@@ -120,7 +178,11 @@
             </li>
         </ul>
     </footer>
-    <script src="./js/index.js"></script>
- <!--   <script src="./js/carrito.js"></script>-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Links JavaScript-->
+    <script src="./js/main.js"></script>
+
+    <!--<script src="./js/carrito.js"></script>-->
 </body>
 </html>

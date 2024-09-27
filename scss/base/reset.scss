@@ -1,19 +1,24 @@
 // reset
-:root {
-    --clr-main: #cd9c31;
-    --clr-sec: #9B3E15;
-    --clr-back: #e0c17e;
-    --clr-back2: #e0c17e75;
-}
+/*
+    $color-main: #cd9c31;
+    $color-sec: #9B3E15;
+    $color-back: #e0c17e;
+    $color-back-sec: #e0c17e75;
+*/
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-background-color: var(--clr-back2);
+    font-family: "Playfair Display", serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul {
+body{
+    background-image: linear-gradient(to bottom,#E0C17E, #e0c17e75);
+
+}
+ul{
     list-style-type: none;
 }
 

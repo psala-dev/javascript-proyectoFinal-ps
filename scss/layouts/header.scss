@@ -1,43 +1,69 @@
-header {
+$color-main: #cd9c31;
+$color-sec: #9B3E15;
+$color-back: #e0c17e;
+$color-back-sec: #e0c17e75;
+
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: global-variable-exists($name: --clr-main);
-    font-weight: 500;
-    border-bottom: 2px solid global-variable-exists($name: --clr-sec);
-}
-nav{
-    ul{
-        list-style-type: none;
-        display: flex;
-        margin: 8px 4px 4px 4px;
-        li{
-            margin: 10px;
-            transition: 2s;
-            a{
-                text-decoration: none;
-                color: black;
+    border-bottom: 2px solid $color-sec;
+    padding: 5px 5px 0px 5px;
+    background-color: $color-back;
+    .logo{
+        font-size: 20px;
+        font-weight: 800;
+        span{
+            color: $color-sec;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            li{
+              padding: 0px 6px;
+              .boton-menu{
+                background-color: transparent;
+                border: 0;
+                color: $color-sec;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 2s;
                 &:hover{
-                font-weight: bolder;
-                margin: 2px; 
+                    color: $color-main;               
                 }
+              }
+              .active{
+                background-color: violet;
+                width: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                position: relative;
+                &:before{
+                    content: "hola";
+                    position: absolute;
+                    background-color: black;
+                    top: 100%;
+                    border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    box-shadow: 15px 1rem 15px blue;
+                }
+            }
+            }
+        }
+    }
+    .header-icons{
+        i{
+            color: $color-sec;
+            span{
+                font-weight: bolder;
+                padding: 0 .25rem;
+                border-radius: .15rem .25rem;
             }
         }
     }
 }
-.header-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 15px;
-    transition: 2s;
-    i{
-        padding: 5px;
-        color: global-variable-exists($name: --clr-sec);
-        font-size: 18px;
-        &:hover{
-        font-weight: bolder;
-        margin: 2px;          
-        }
-    }
-}
+    
+
